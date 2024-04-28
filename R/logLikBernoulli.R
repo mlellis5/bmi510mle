@@ -12,7 +12,7 @@
 #' data = c(1, 0, 0, 0, 1, 1, 1)
 #' logLikBernoulli(data)
 #'
-#' @importFrom stats seq log sum which.max
+#' @importFrom seq log sum which.max
 
 logLikBernoulli = function(data) {
   # Grid-based search for parameter p in steps of 0.001
