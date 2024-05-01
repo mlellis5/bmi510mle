@@ -46,7 +46,8 @@ standardizeNames = function(data)
 
   6. minimumN = function(x1,x2)
 
-      A function that serves as a wrapper around pwr::pwr.t2n.test that takes either one (x1)or two (x2) samples of preliminary data and returns the minimum sample size needed for a t-test of the null hypotheses that either mu_x1 == 0 or mu_x1 == mu_x2 with 80% power at alpha=0.05.
+      A function that serves as a wrapper around pwr::pwr.t2n.test that takes either one (x1)or two (x2) samples of preliminary data.
+      Function returns the minimum sample size needed for a t-test of the null hypotheses that either mu_x1 == 0 or mu_x1 == mu_x2 with 80% power at alpha=0.05.
 ```{r}
 minimumN = function(x1,x2)
 ```
