@@ -11,7 +11,7 @@
 #'
 #' @return A tibble containing the contents of the downloaded RedCap report.
 #'
-#' @importFrom httr POST http_error
+#' @importFrom httr POST http_error content
 #' @importFrom readr read_csv
 #'
 #' @export

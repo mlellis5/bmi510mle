@@ -9,7 +9,7 @@
 #'
 #' @return The minimum sample size needed for the t-test.
 #'
-#' @importFrom pwr pwr.t2n.test
+#' @importFrom pwr pwr.t.test pwr.t2n.test
 #'
 #' @export
 #'
@@ -42,7 +42,7 @@ minimumN = function(x1,x2 = NULL){
 
     # Calculate minimum sample size for two-sample t-test
     df = n1 + n2 - 2
-    pooled_sd = sqrt(((n1-1)*sd(x1)^2 + (n2-1)*sd(x2)^2)/df)
+    pooled_sd = sqrt(((n1-1)*stats::sd(x1)^2 + (n2-1)*stats::sd(x2)^2)/df)
     d = (mean(x1) - mean(x2)) / pooled_sd
 
     # function to calculate power of 2 sample t test using pwr::pwr.t2n.test
