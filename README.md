@@ -1,6 +1,11 @@
 The objective of the BMI-510 final project is to familiarize myself with creating documented, reusable code for projects and colleagues. 
 I created a a github repository containing a small R package with functions described below.
 
+**Installation**
+```{r}
+install.packages("bmi510mle")
+```
+
 **R functions included in package:**
 
   1. logLikBernoulli = function(data)
