@@ -13,7 +13,7 @@ logLikBernoulli(data)
 The p value that maximizes and the log-likelihood of the vector of binary outcomes.
 }
 \description{
-This function takes a vector of binary outcomes and performs a grid-based search to find
+This function takes a vector of binary outcomes 'data' and performs a grid-based search to find
 the parameter p that maximizes the log-likelihood of observing the data under a Bernoulli
 distribution.
 }
