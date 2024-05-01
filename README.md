@@ -4,7 +4,7 @@ I created a a github repository containing a small R package with functions desc
 
 **Installation**
 ```{r}
-install.packages("bmi510mle")
+devtools::install_github("https://github.com/mlellis5/bmi510mle")
 ```
 
 **R functions included in package:**
