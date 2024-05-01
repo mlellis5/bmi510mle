@@ -1,30 +1,16 @@
-#' Calculate and Plot Survival Curve
+#' @title Calculate and Plot Survival Curve
 #'
-#' This function takes a numerical vector of status and a numerical vector of time,
-#' and calculates and plots a survival curve S(t).
+#' @description This function takes a numerical vector of status and a numerical vector of time, creates a data frame with columns \code{time} and \code{status}, sorts it by time in ascending order,
+#' removes censored data, calculates survival probabilities, and plots a survival curve using the \code{plot} function.
 #'
 #' @param status A numerical vector indicating the status of each individual (0 = observation censored, 1 = event observed).
 #' @param time A numerical vector indicating the time at which each event occurred or each individual was censored.
 #'
 #' @return A numerical vector representing the survival probabilities at each unique time point.
 #'
-#' @details This function creates a data frame with columns \code{time} and \code{status}, sorts it by time in ascending order,
-#' removes censored data, calculates survival probabilities, and plots a survival curve using the \code{plot} function.
-#'
 #' @export
 #'
 #' @importFrom graphics plot
-#'
-#' @importFrom stats cumprod
-#' @importFrom stats sort
-#' @importFrom base seq_along
-#' @importFrom base order
-#'
-#' @seealso \code{\link{plot}}
-#' @seealso \code{\link{cumprod}}
-#' @seealso \code{\link{sort}}
-#' @seealso \code{\link{seq_along}}
-#' @seealso \code{\link{order}}
 #'
 #' @examples
 #' # Generate example data
