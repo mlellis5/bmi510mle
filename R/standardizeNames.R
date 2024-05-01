@@ -9,6 +9,7 @@
 #'
 #' @importFrom dplyr rename_with
 #' @importFrom janitor make_clean_names
+#' @importFrom snakecase to_any_case
 #'
 #' @export
 #'
