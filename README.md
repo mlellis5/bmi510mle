@@ -39,7 +39,7 @@ pcApprox = function(x, npc)
 
   5. standardizeNames = function(data)
 
-         A function that serves as a wrapper around dplyr ::rename_with and janitor ::make_clean_names that converts the variables in a tibble data to "small_camel" case. 
+      A function that serves as a wrapper around dplyr::rename_with and janitor::make_clean_names that converts the variables in a tibble data to "small_camel" case. 
 ```{r}
 standardizeNames = function(data)
 ```
