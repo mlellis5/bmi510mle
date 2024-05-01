@@ -9,7 +9,8 @@ install.packages("bmi510mle")
 **R functions included in package:**
 
   1. logLikBernoulli = function(data)
-        A function that takes a vector like data = c(1,0,0,0,1,1,1,) and calculates the parameter p that maximizes the log-likelihood. Uses a grid-based search with p in steps of 0.001.
+
+     A function that takes a vector like data = c(1,0,0,0,1,1,1,) and calculates the parameter p that maximizes the log-likelihood. Uses a grid-based search with p in steps of 0.001.
 ```{r}
 logLikBernoulli = function(data)
 ```
